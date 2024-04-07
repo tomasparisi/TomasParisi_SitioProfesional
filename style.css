@@ -73,11 +73,11 @@ footer p {
     background-color: black;
 }
 
-/* Seccion Productos */
+/* Seccion Nuestras Recetas */
 
 .imagenesProductos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
     grid-gap: 10px; 
     justify-content: center; 
 }
@@ -144,4 +144,29 @@ footer p {
 }
 .receta li {
     margin-bottom: 5px;
+}
+
+
+/*Grids Productos*/
+
+.gridProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding: 20px; 
+}
+.gridProducto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+.gridProducto img {
+    width: 100%; 
+    max-width: 200px;
+    height: auto; 
+    margin-bottom: 10px; 
+}
+.price {
+    margin: 10px 0; 
 }
