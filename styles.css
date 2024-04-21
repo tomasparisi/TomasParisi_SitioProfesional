@@ -1,0 +1,85 @@
+/* Seccion Inicio*/
+* {
+    background-color:rgb(222, 230, 215); 
+}
+
+.logoNombre {
+    text-align: center;
+}
+
+main h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+body {
+    background-color:rgb(222, 230, 215); 
+}
+
+
+
+.custom-carousel-container {
+    width: 70%;   
+    margin: auto; 
+    overflow: hidden; 
+}
+
+.carousel-inner img {
+    width: 100%; 
+    height: auto; 
+}
+
+/* Estilo general de la navbar */
+.navbar-nav {
+    align-items: center; /* Alineación vertical de los elementos */
+    justify-content: center; /* Centrado horizontal de los elementos */
+    background-color:rgb(222, 230, 215)!important;
+}
+
+/* Aumenta el espacio entre los elementos de la navbar */
+.nav-item {
+    margin: 0 20px; /* Ajusta el espacio horizontal según sea necesario */
+}
+
+/* Estilos para los enlaces */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease; /* Suaviza la transición del color */
+    color: #333; /* Color inicial del texto */
+}
+
+/* Animación y efecto al pasar el mouse */
+.nav-link:hover,
+.nav-link:focus {
+    color: #0056b3; /* Cambia el color del enlace al pasar el mouse */
+    text-decoration: none; /* Elimina la subraya al pasar el mouse */
+}
+
+/* Añadiendo un efecto de subrayado al pasar el mouse */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #0056b3;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+    width: 100%;
+    left: 0;
+    background: #0056b3;
+}
+
+/* Asegura que la navbar y sus contenedores están centrados y llenan el ancho */
+.navbar, .container-fluid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
