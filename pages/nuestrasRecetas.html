@@ -4,34 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dietetica Power</title>
-  <!-- <link rel="stylesheet" type="text/css" href="./style.css"/> El CSS Lo estoy haciendo para la proxima entrega todavia no esta LINK-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <link rel="stylesheet" type="text/css" href="../styles.css"/> 
 </head>
 <body>
     <header>
-        <a href="../index.html"><img src="../imagenes/logo.jfif"></a>
-        <h1>Dietetica Power</h1>
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/nuestrasRecetas.html">Nuestras Recetas</a></li>
-                <li><a href="../pages/contactarnos.html">Contactarnos</a></li>
-                <li><a href="../pages/sobreNosotros.html">Sobre Nosotros</a></li>
-            </ul>
-
-        </nav>
-    </header>
-    <main>
-        <div class="imagenesProductos">
-            <div class="columna"><h3 class="barras">Barritas</h3>
-                <img src="../imagenes/barritasProductos.jfif" alt="Nuestras barritas de avenas recien horneadas">
-                <a href="./pagesProductos/avena.html" target="_blank"><button>Receta</button></a>
+      <div class="logoNombre">
+        <img src="../imagenes/logo.jfif">
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./nuestrasRecetas.html">Recetas</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./sobreNosotros.html">Sobre Nosotros</a>
+              </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <img src="../imagenes/carritoCompras.png" height="40px">
+                    </li>
+                </ul>
             </div>
-            <div class="columna">
-            <h3 class="galletas">Galletas</h3>
-                <img src="../imagenes/galletiasProductos.jfif" alt="Nuestras Galletas recien horneadas">
-                <a href="./pagesProductos/galleta.html" target="_blank"><button>Receta</button></a>
+        </div>
+    </nav>
+    
+     </header>
+    <main>
+        <h1>Nuestras Recetas</h1>
+        <div class="containerRecetas">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../imagenes/barritasProductos.jfif" alt="Imagen barras de avena">
+                <div class="card-body">
+                    <h5 class="card-title">Barritas de avena</h5>
+                    <p class="card-text">Aquí tienen unas de nuestras recetas saludables para comenzar el día.</p>
+                    <a href="./pagesProductos/avena.html" target="_blank" class="btn btn-primary">Receta</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../imagenes/galletiasProductos.jfif" alt="Imagen galletas caseras">
+                <div class="card-body">
+                    <h5 class="card-title">Galletas</h5>
+                    <p class="card-text">Aquí tienen unas de nuestras recetas saludables para comenzar el día.</p>
+                    <a href="./pagesProductos/galleta.html" target="_blank" class="btn btn-primary">Receta</a>
+                </div>
             </div>
         </div>
     </main>
